@@ -1,4 +1,4 @@
-# Learning Learning Learning Web Video and Image
+# Learning Web Video and Image
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
