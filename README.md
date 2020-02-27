@@ -13,15 +13,14 @@ Web video playback, web video manipulation, and web image manipulation.
   - YouTube and Vimeo download playback setup, but not actual video until user hits play.
   - If streaming, default to lowest quality for fast playback.
 - <https://www.smashingmagazine.com/2018/10/video-playback-on-the-web-part-2/#conclusion>
-  - ```html
-    <video preload="none" width="100%" muted controls src="http://res.cloudinary.com/dougsillars/video/upload/w_960/v1534228645/30s4kbbb_oblsgc.mp4"/>
-    ```
-    or
-    ```html
-    <video preload="metadata" width="100%" muted controls src="http://res.cloudinary.com/dougsillars/video/upload/w_960/v1534228645/30s4kbbb_oblsgc.mp4"/>
-    ```
-  - `preload="none"` -> do NOT store any part of the video until requested by the user, for faster page startup, at the cost of a delay in video startup: **I'd recommended this in most cases. Recommended for long videos.** (YouTube does this.)
+  - `preload="none"` -> do NOT store any part of the video until requested by the user, for faster page startup, at the cost of a delay in video startup: **I'd personally recommended this in most cases. Recommended for long videos.** (YouTube does this.)
+    - ```html
+      <video preload="none" width="100%" muted controls src="http://res.cloudinary.com/dougsillars/video/upload/w_960/v1534228645/30s4kbbb_oblsgc.mp4"/>
+      ```
   - `preload="metadata"` -> store initial segment of video locally, for faster startup of page but also of video: **only use if the video is highly likely to be watched, or if the video is small, because large video = large initial segment. A good balance but should be monitored.**
+    - ```html
+      <video preload="metadata" width="100%" muted controls src="http://res.cloudinary.com/dougsillars/video/upload/w_960/v1534228645/30s4kbbb_oblsgc.mp4"/>
+      ```
   - `preload="auto"` -> avoid network problems by storing entire video locally: **only use if the video is very highly likely to be watched.**
 - <https://www.smashingmagazine.com/2013/11/the-future-of-video-in-web-design/>
 - <https://www.smashingmagazine.com/2011/04/image-manipulation-with-jquery-and-php-gd/>
