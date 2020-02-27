@@ -9,19 +9,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
   <script>
     // p5.js:
+    let blurOn = false;
+    let sketch = function(p) {
+      p.setup = function() {
+        p.createCanvas(300, 300);
+        img = p.loadImage('https://avatars2.githubusercontent.com/u/18131787?s=400&v=4');
+      }
 
-    function setup() {
-      createCanvas(300, 300);
-      img = loadImage('https://avatars2.githubusercontent.com/u/18131787?s=400&v=4');
+      p.draw = function() {
+        p.background(150);
+        p.image(img, 0, 0);
+        if (blurOn) {
+          p.filter(p.BLUR, 10);
+        }
+      }
     }
+    new p5(sketch, 'p5js-container');
 
-    function draw() {
-      background(150);
-      image(img, 0, 0);
-      filter(BLUR, 10);
+    function toggleImageBlur() {
+      blurOn = !blurOn;
+      const buttonText = (blurOn) ? 'Unblur image' : 'Blur image';
+      document.getElementById('blur-toggle-button').innerHTML = buttonText;
     }
   </script>
 </head>
 <body>
+  <p>
+    <button id="blur-toggle-button" onclick="toggleImageBlur()">Blur image</button>
+  </p>
+  <div id="p5js-container"></div>
 </body>
 </html>
