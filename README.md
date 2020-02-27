@@ -31,6 +31,7 @@ Web video playback, web video manipulation, and web image manipulation.
 ### (for image:)
 
 - [p5.js](https://p5js.org/reference/#/p5/filter)
+  - You can do things like blur, filter, etc.
 - [Jimp](https://github.com/oliver-moran/jimp): <https://www.npmjs.com/package/jimp>
 - [Canvas](https://github.com/hchiam/learning-canvas) and [WebGL](https://github.com/hchiam/learning-webgl)
 
