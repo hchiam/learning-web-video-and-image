@@ -23,6 +23,7 @@ Web video playback, web video manipulation, and web image manipulation.
       ```
   - `preload="auto"` -> avoid network problems by storing entire video locally: **only use if the video is very highly likely to be watched.**
 - <https://www.smashingmagazine.com/2013/11/the-future-of-video-in-web-design/>
+  - Demo of connecting video to HTML elements and triggering CSS animations: <https://www.sketchingwithcss.com/flexbox/> uses [charlie.js](https://github.com/sfioritto/charlie.js), e.g.: `<div class="charlie" data-animations="grow, shrink" data-times="40.2, 90.3"></div>` and `CHARLIE.setup(document.getElementById("video")); CHARLIE.addCallback(() => {...}, 43.2);`
 - <https://www.smashingmagazine.com/2011/04/image-manipulation-with-jquery-and-php-gd/>
 
 ---
