@@ -6,12 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title></title>
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
 </head>
 <body>
-  <h1>Hi!</h1>
-  <p>This file was first created using the Yeoman generator <code>generator-hchiam-learning</code>: <a href="https://www.npmjs.com/package/generator-hchiam-learning" target="_blank">https://www.npmjs.com/package/generator-hchiam-learning</a></p>
-  <video preload="none" width="100%" muted controls src="http://res.cloudinary.com/dougsillars/video/upload/w_960/v1534228645/30s4kbbb_oblsgc.mp4"/>
+  <h2>Elements with CSS animations linked to video times (using <a href="https://github.com/sfioritto/charlie.js/blob/master/demo/charlie.js" target="_blank">charlie.js</a>):</h2>
+  <p id="charlie-elements">
+    <span class="charlie" data-animations="shrink, fade" data-times="0, 0.5" role="text">0</span>
+    <span class="charlie" data-animations="shrink, fade" data-times="1, 1.5" role="text">1</span>
+    <span class="charlie" data-animations="shrink, fade" data-times="2, 2.5" role="text">2</span>
+    <span class="charlie" data-animations="shrink, fade" data-times="3, 3.5" role="text">3</span>
+    <span class="charlie" data-animations="shrink, fade" data-times="4, 4.5" role="text">4</span>
+    <span class="charlie" data-animations="shrink, fade" data-times="5, 5.5" role="text">5</span>
+    <span class="charlie" data-animations="shrink, fade" data-times="6, 6.5" role="text">6</span>
+    <span class="charlie" data-animations="shrink, fade" data-times="7, 7.5" role="text">7</span>
+  </p>
+  <h2>Video with <code>preload="none"</code>:</h2>
+  <video id="video"
+         preload="none"
+         width="100%"
+         muted
+         controls
+         src="http://res.cloudinary.com/dougsillars/video/upload/w_960/v1534228645/30s4kbbb_oblsgc.mp4">
+    Your browser does not support the HTML5 video element.
+  </video>
+  <script src="charlie.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
 

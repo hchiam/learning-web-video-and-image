@@ -1,5 +1,5 @@
 * {
-  background: rgb(32,32,32);
+  background: rgb(32, 32, 32);
   color: whitesmoke;
   font-family: avenir, arial, helvetica, sans-serif;
   border-radius: 10px;
@@ -10,12 +10,14 @@ button {
   padding: 10px;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   background: lime;
   color: black;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: lime;
 }
 
@@ -23,8 +25,95 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-/**
- * This file was first created using the Yeoman generator
- * generator-hchiam-learning:
- * https://www.npmjs.com/package/generator-hchiam-learning
- */
+video#video {
+  height: 300px;
+}
+
+#charlie-elements {
+  text-align: center;
+}
+
+#charlie-elements > .charlie[data-animations][data-times] {
+  font-size: xx-large;
+  color: lime;
+}
+
+.shrink {
+  -webkit-animation-name: shrink;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+
+  animation-name: shrink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes shrink {
+  0% {
+    font-size: xx-large;
+  }
+  100% {
+    font-size: small;
+    width: 0;
+    height: 0;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    font-size: xx-large;
+  }
+  100% {
+    font-size: small;
+    width: 0;
+    height: 0;
+  }
+}
+
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+code {
+  font-family: monospace;
+  color: lime;
+}
