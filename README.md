@@ -7,6 +7,11 @@ Web video playback, web video manipulation, and web image manipulation.
 ## Learning from
 
 - <https://www.smashingmagazine.com/2018/10/video-playback-on-the-web-part-1/>
+  - Size video according to device display size. (Smaller is faster to load and also less choppy to play back.)
+  - Omit audio if possible. (Less to download.)
+  - YouTube and Vimeo download playback setup, but not actual video until user hits play.
+  - If streaming, default to lowest quality for fast playback.
+- <https://www.smashingmagazine.com/2018/10/video-playback-on-the-web-part-2/>
 - <https://www.smashingmagazine.com/2013/11/the-future-of-video-in-web-design/>
 - <https://www.smashingmagazine.com/2011/04/image-manipulation-with-jquery-and-php-gd/>
 
