@@ -2,22 +2,25 @@ if (window.CHARLIE) {
   window.CHARLIE.setup(document.getElementById('video'));
 }
 
-/** to be used by event listener */
-function playVideo() {
-  const video = document.getElementById('video');
-  video.play();
-}
-
-/** to be used by event listener */
-function pauseVideo() {
-  const video = document.getElementById('video');
-  video.pause();
-}
+const video = document.getElementById('video');
+const skipInterval = document.getElementById('seconds-to-skip');
 
 document.getElementById('play-video').addEventListener('click', () => {
-  playVideo();
+  video.play();
 });
 
 document.getElementById('pause-video').addEventListener('click', () => {
-  pauseVideo();
+  video.pause();
+});
+
+document.getElementById('skip-to-middle').addEventListener('click', () => {
+  video.currentTime = video.duration / 2;
+});
+
+document.getElementById('skip-forwards').addEventListener('click', () => {
+  video.currentTime = video.currentTime + parseInt(skipInterval.value);
+});
+
+document.getElementById('skip-backwards').addEventListener('click', () => {
+  video.currentTime = video.currentTime - parseInt(skipInterval.value);
 });

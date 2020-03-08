@@ -4,6 +4,15 @@ Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
 Web video playback, web video manipulation, and web image manipulation.
 
+```bash
+git clone https://github.com/hchiam/learning-web-video-and-image.git
+cd learning-web-video-and-image
+yarn
+yarn start
+# Control+c
+# yarn stop
+```
+
 ## Learning from
 
 ### (for video:)

@@ -16,9 +16,23 @@ button:focus {
   color: black;
 }
 
+a[href="/image-manipulation.html"] {
+  color: pink;
+}
+
 a:hover,
 a:focus {
   color: lime;
+}
+
+input {
+  padding: 10px;
+}
+
+input:hover,
+input:focus {
+  background: lime;
+  color: black;
 }
 
 *:focus {
