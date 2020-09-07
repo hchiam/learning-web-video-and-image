@@ -37,6 +37,8 @@ yarn start
   - Demo of connecting video to HTML elements and triggering CSS animations: <https://www.sketchingwithcss.com/flexbox/> uses [charlie.js](https://github.com/sfioritto/charlie.js), e.g.: to run grow and then shrink CSS `@keyframes` animations: `<div class="charlie" data-animations="grow, shrink" data-times="40.2, 90.3"></div>` and `CHARLIE.setup(document.getElementById("video")); CHARLIE.addCallback(() => {...}, 43.2);`
     - **_NOTE:_** using charlie.js and `<video>` is not tested to be fully cross-browser compatible.
 
+- <https://codepen.io/hchiam/pen/ZEWrEJd> demo of video that looks like a looping gif but is actually a video playing that you can even click on to pause it or click it again to resume play.
+
 ### (for image:)
 
 - [p5.js](https://p5js.org/reference/#/p5/filter)
