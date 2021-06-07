@@ -72,3 +72,5 @@ You can publish a live site to [surge](https://github.com/hchiam/learning-surge)
 You can zip the current folder with `npm run zip`.
 
 This file was first created using the Yeoman generator [`generator-hchiam-learning`](https://www.npmjs.com/package/generator-hchiam-learning).
+
+WebVTT (Web Video Text Tracks) Format <https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API> is most flexible, lets you set caption preferences like color/size.
