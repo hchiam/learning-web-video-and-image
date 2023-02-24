@@ -17,6 +17,8 @@ yarn start
 
 ### (for video:)
 
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+
 - <https://www.smashingmagazine.com/2018/10/video-playback-on-the-web-part-1/>
   - Prepare different-sized videos for mobile (Smaller is faster to load and also less choppy to play back.): none, small, big video file in `src`, and `<video>` dimensions.
   - Omit audio if possible. Prefer silent videos to videos with audio. (Less to download.)
@@ -58,6 +60,10 @@ yarn start
   - You can do things like blur, filter, etc.
 - [Jimp](https://github.com/oliver-moran/jimp): <https://www.npmjs.com/package/jimp>
 - [Canvas](https://github.com/hchiam/learning-canvas) and [WebGL](https://github.com/hchiam/learning-webgl)
+
+- `<img loading="lazy">` for images that start off-screen https://www.w3schools.com/tags/att_img_loading.asp
+
+- see https://github.com/hchiam/learning-css for `src`, `srcset`, `source` with resolution or layout width https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/
 
 ---
 
