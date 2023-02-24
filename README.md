@@ -2,7 +2,7 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-Web video playback, web video manipulation, and web image manipulation.
+Web video playback, web video manipulation, web image manipulation, and connecting video to CSS animations.
 
 ```bash
 git clone https://github.com/hchiam/learning-web-video-and-image.git
